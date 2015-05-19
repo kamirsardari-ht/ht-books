@@ -615,7 +615,7 @@ function pippin_edd_custom_checkout_fields() {
 	</p>
 	<?php
 }
-add_action('edd_purchase_form_user_info', 'pippin_edd_custom_checkout_fields');
+//add_action('edd_purchase_form_user_info', 'pippin_edd_custom_checkout_fields');
 
 // check for errors with out custom fields
 function pippin_edd_validate_custom_fields($valid_data, $data) {
@@ -636,16 +636,16 @@ function pippin_edd_store_custom_fields($payment_meta) {
 	$payment_meta['company'] = isset( $_POST['edd_company'] ) ? sanitize_text_field( $_POST['edd_company'] ) : '';
 	return $payment_meta;
 }
-add_filter('edd_payment_meta', 'pippin_edd_store_custom_fields');
+//add_filter('edd_payment_meta', 'pippin_edd_store_custom_fields');
 
 // show the custom fields in the "View Order Details" popup
 function pippin_edd_purchase_details($payment_meta, $user_info) {
 	$phone   = isset( $payment_meta['phone'] ) ? $payment_meta['phone'] : 'none';
 	$company = isset( $payment_meta['company'] ) ? $payment_meta['company'] : 'none';
 	?>
-	<li><?php echo __('Phone:', 'pippin_edd') . ' ' . $phone; ?></li>
+	<li><?php echo __('Phonettttttttttt:', 'pippin_edd') . ' ' . $phone; ?></li>
 	<li><?php echo __('Company:', 'pippin_edd') . ' ' . $company; ?></li>
  
 	<?php
 }
-add_action('edd_payment_personal_details_list', 'pippin_edd_purchase_details', 10, 2);
+//add_action('edd_payment_personal_details_list', 'pippin_edd_purchase_details', 10, 2);
