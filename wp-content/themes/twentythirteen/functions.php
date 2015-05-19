@@ -643,7 +643,7 @@ function pippin_edd_purchase_details($payment_meta, $user_info) {
 	$phone   = isset( $payment_meta['phone'] ) ? $payment_meta['phone'] : 'none';
 	$company = isset( $payment_meta['company'] ) ? $payment_meta['company'] : 'none';
 	?>
-	<li><?php echo __('Phonerrrrrrrrrrrrr:', 'pippin_edd') . ' ' . $phone; ?></li>
+	<li><?php echo __('Phoneeeeeeeeeeee:', 'pippin_edd') . ' ' . $phone; ?></li>
 	<li><?php echo __('Company:', 'pippin_edd') . ' ' . $company; ?></li>
  
 	<?php
